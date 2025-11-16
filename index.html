@@ -21,52 +21,56 @@
         </nav>
     </header>
 
-    <section class="hero">
+    <main>
+        <div class="left-side">
+            <section class="hero">
 
-        <div class="hero-image">
-            <img src="./assets/img/pizza.jpg" alt="header image" class="header-img">
+                <div class="hero-image">
+                    <img src="./assets/img/pizza.jpg" alt="header image" class="header-img">
 
-            <div class="profile-pic-container">
-                <img src="./assets/img/takeaway.png" alt="Logo" class="profile-pic">
+                    <div class="profile-pic-container">
+                        <img src="./assets/img/takeaway.png" alt="Logo" class="profile-pic">
+                    </div>
+                </div>
+
+                <div class="tab-header">
+                    <h1>Paradise Noodles</h1>
+                    <p class="orange-tag">Bewertung (4,2 von 5 Sternen)</p>
+                </div>
+
+                <div class="tab-menu">
+                    <img src="./assets/icons/icons8-chevron-right-48.png" alt="Tab Menu">
+                    <a href="#">Hauptgerichte</a>
+                    <a href="#">Beilage</a>
+                </div>
+
+                <img src="./assets/img/food.jpg" alt="Hauptgerichte" class="food-img">
+
+            </section>
+
+            <section>
+                <h2 class="titel-menu">Hauptgerichte</h2>
+                <div id="menu"></div>
+            </section>
+        </div>
+
+        <aside id="cart" class="cart-fixed">
+            <h3>Warenkorb</h3>
+            <div id="cart-items"></div>
+            <div class="cart-summary">
+                <div><span>Zwischensumme</span><strong id="cart-subtotal">0,00 €</strong></div>
+                <div><span>Lieferkosten</span><strong id="cart-shipping">5,00 €</strong></div>
+                <div class="total"><span>Gesamt</span><strong id="cart-total">5,00 €</strong></div>
             </div>
-        </div>
+            <div>
+                <button id="checkout">Zur Kasse</button>
+            </div>
+        </aside>
+    </main>
 
-        <div class="tab-header">
-            <h1>Paradise Noodles</h1>
-            <p class="orange-tag">Bewertung (4,2 von 5 Sternen)</p>
-        </div>
-
-        <div class="tab-menu">
-            <img src="./assets/icons/icons8-chevron-right-48.png" alt="Tab Menu">
-            <a href="#">Hauptgerichte</a>
-            <a href="#">Beilage</a>
-        </div>
-
-        <img src="./assets/img/food.jpg" alt="Hauptgerichte" class="food-img">
-
-    </section>
-
-    <section>
-        <h2 class="titel-menu">Hauptgerichte</h2>
-        <div id="menu"></div>
-    </section>
-
-    <aside id="cart" class="cart-fixed">
-        <h3>Warenkorb</h3>
-        <div id="cart-items"></div>
-        <div class="cart-summary">
-            <div><span>Zwischensumme</span><strong id="cart-subtotal">0,00 €</strong></div>
-            <div><span>Lieferkosten</span><strong id="cart-shipping">5,00 €</strong></div>
-            <div class="total"><span>Gesamt</span><strong id="cart-total">5,00 €</strong></div>
-        </div>
-        <div>
-            <button id="checkout">Zur Kasse</button>
-        </div>
-    </aside>
-
-
-    <button id="cart-toggle-btn" class="cart-toggle-btn">🛒 Warenkorb</button>
-
+<div id="cart-toggle-btn">
+    <button class="cart-toggle-btn">🛒 Warenkorb</button>
+</div>
 
     <div id="cart-dialog" class="cart-dialog">
         <div class="cart-dialog-content">
@@ -84,6 +88,7 @@
         </div>
     </div>
 
+    <div id="cart-feedback" class="cart-feedback">Zum Warenkorb hinzugefügt! 🛒</div>
 
     <footer>
 

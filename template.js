@@ -16,14 +16,6 @@ function renderMenu() {
       </div>
     `;
   });
-
-  let addButtons = document.querySelectorAll("[data-add]");
-  addButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      let index = parseInt(btn.dataset.index);
-      addToCart(index);
-    });
-  });
 }
 
 function tplCartList(cart, fmt) {
